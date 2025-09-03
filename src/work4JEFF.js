@@ -1,12 +1,15 @@
 //CONSTANTES
 const displayLies = document.getElementById("displayLies");
 const btn = document.getElementById("button_event");
-let count = 0;
+let count = localStorage.getItem("Nombre de mensonges");
+
+if(count == null){
+    displayLies.innerText = `Nombre de mensonges : 0`
+}
 
 function addLie () {
     btn.addEventListener("click", ()=> {
         count++;
-        //displayLies.innerText = `Nombre de mensonges : ${count}`;
         localStorage.setItem("Nombre de mensonges", count);
         displayNumberOfLies();
     })
@@ -14,7 +17,6 @@ function addLie () {
 addLie();
 
 function displayNumberOfLies(){
-    let lies = localStorage.getItem("Nombre de mensonges");
-     displayLies.innerText = `Nombre de mensonges : ${lies}`;
+     displayLies.innerText = `Nombre de mensonges : ${count}`;
 }
 displayNumberOfLies();
