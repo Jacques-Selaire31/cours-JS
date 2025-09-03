@@ -1,11 +1,8 @@
 //CONSTANTES
 const displayLies = document.getElementById("displayLies");
 const btn = document.getElementById("button_event");
-let count = localStorage.getItem("Nombre de mensonges");
+let count = localStorage.getItem("Nombre de mensonges") || 0;
 
-if(count == null){
-    displayLies.innerText = `Nombre de mensonges : 0`
-}
 
 function addLie () {
     btn.addEventListener("click", ()=> {
