@@ -8,6 +8,7 @@ function addLie () {
         count++;
         //displayLies.innerText = `Nombre de mensonges : ${count}`;
         localStorage.setItem("Nombre de mensonges", count);
+        displayNumberOfLies();
     })
 }
 addLie();
