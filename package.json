@@ -1,0 +1,22 @@
+{
+  "name": "super-cours-js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "daisyui": "^5.1.1",
+    "easter-egg-collection": "^1.4.56",
+    "vite": "^7.1.2"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.12",
+    "dompurify": "^3.2.6",
+    "marked": "^16.2.1",
+    "tailwindcss": "^4.1.12"
+  }
+}
