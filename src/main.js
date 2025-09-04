@@ -1,5 +1,11 @@
 console.log('Hello World from main.js')
 
+import { renderTimeline } from './services/timelineService.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+    renderTimeline();
+  });
+
 //* On est dans /src/main.js
 
 // ! ⬇ Ancienne version de base (counter) 
