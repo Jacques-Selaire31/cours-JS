@@ -5,6 +5,9 @@
   font-size: xx-large;
   cursor: pointer;
 }
+#title-main {
+    cursor: pointer;
+}
 
 /*! ⬇️ Ancien CSS de base pour l'appli de counter mais pas le temps donc on fera DaisyUI basé sur Tailwind */
 /* :root {

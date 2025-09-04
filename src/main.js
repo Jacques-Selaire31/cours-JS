@@ -1,11 +1,22 @@
 console.log('Hello World from main.js')
 
 import { renderTimeline } from './services/timelineService.js';
+import { WelcomeService } from './services/welcoleService.js';
 
-document.addEventListener('DOMContentLoaded', () => {
-    renderTimeline();
-  });
+// document.addEventListener('DOMContentLoaded', () => {
+//     renderTimeline();
+//   });
 
+function TitleToJoke(){
+    const titleMain = document.getElementById('title-main');
+    let joke = false;
+    titleMain.addEventListener("click", async ()=>{
+        titleMain.innerText = joke ? await WelcomeService() : "Bienvenue!";
+            joke = !joke; 
+    });
+
+}
+TitleToJoke();
 //* On est dans /src/main.js
 
 // ! ⬇ Ancienne version de base (counter) 
